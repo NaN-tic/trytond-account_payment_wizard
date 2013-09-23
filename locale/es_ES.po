@@ -1,0 +1,55 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:account.payment.create.start,approve:"
+msgid "Approve payments"
+msgstr "Aprovar pagos"
+
+msgctxt "field:account.payment.create.start,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:account.payment.create.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.payment.create.start,journal:"
+msgid "Journal"
+msgstr "Diario"
+
+msgctxt "field:account.payment.create.start,kind:"
+msgid "Kind"
+msgstr "Tipo"
+
+msgctxt "help:account.payment.create.start,approve:"
+msgid "Create payments in approved state"
+msgstr "Los pagos se crearan en estado aprovado"
+
+msgctxt "model:account.payment.create.start,name:"
+msgid "Create Payments Start"
+msgstr "Inicio de crear pagos"
+
+msgctxt "model:ir.action,name:act_create_payments"
+msgid "Create Payments"
+msgstr "Crear Pagos"
+
+msgctxt "model:ir.action.wizard,name:act_create_payments"
+msgid "Create Payments"
+msgstr "Crear Pagos"
+
+msgctxt "selection:account.payment.create.start,kind:"
+msgid "Payable"
+msgstr "A pagar"
+
+msgctxt "selection:account.payment.create.start,kind:"
+msgid "Receivable"
+msgstr "A cobrar"
+
+msgctxt "wizard_button:account.payment.create,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:account.payment.create,start,process:"
+msgid "Process"
+msgstr "Procesar"

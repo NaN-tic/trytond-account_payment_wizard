@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="payment_create_start_view_form">
+            <field name="model">account.payment.create.start</field>
+            <field name="type">form</field>
+            <field name="name">payment_create_start_form</field>
+        </record>
+
+        <record model="ir.action.wizard" id="act_create_payments">
+            <field name="name">Create Payments</field>
+            <field name="wiz_name">account.payment.create</field>
+        </record>
+
+        <record model="ir.action-res.group"
+            id="wizard_create_payments_group_payment">
+            <field name="action" ref="act_create_payments"/>
+            <field name="group" ref="account_payment.group_payment"/>
+        </record>
+
+        <record model="ir.action.keyword" id="act_create_payments_keyword1">
+            <field name="keyword">form_action</field>
+            <field name="model">account.move.line,-1</field>
+            <field name="action" ref="act_create_payments"/>
+        </record>
+
+
+    </data>
+</tryton>
