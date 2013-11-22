@@ -4,7 +4,7 @@ msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:account.payment.create.start,approve:"
 msgid "Approve payments"
-msgstr "Aprovar pagos"
+msgstr "Aprovar pagaments"
 
 msgctxt "field:account.payment.create.start,company:"
 msgid "Company"
@@ -16,27 +16,19 @@ msgstr "ID"
 
 msgctxt "field:account.payment.create.start,journal:"
 msgid "Journal"
-msgstr "Diario"
+msgstr "Diari"
 
 msgctxt "field:account.payment.create.start,kind:"
 msgid "Kind"
-msgstr "Tipo"
+msgstr "Clase"
 
 msgctxt "help:account.payment.create.start,approve:"
 msgid "Create payments in approved state"
-msgstr "Los pagos se crearan en estado aprovado"
+msgstr "Els pagaments es crearàn en estat aprovat."
 
 msgctxt "model:account.payment.create.start,name:"
 msgid "Create Payments Start"
-msgstr "Inicio de crear pagos"
-
-msgctxt "model:ir.action,name:act_create_payments"
-msgid "Create Payments"
-msgstr "Crear Pagos"
-
-msgctxt "model:ir.action.wizard,name:act_create_payments"
-msgid "Create Payments"
-msgstr "Crear Pagos"
+msgstr "Inici de crear pagaments"
 
 msgctxt "selection:account.payment.create.start,kind:"
 msgid "Payable"

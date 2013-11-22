@@ -30,14 +30,6 @@ msgctxt "model:account.payment.create.start,name:"
 msgid "Create Payments Start"
 msgstr "Inicio de crear pagos"
 
-msgctxt "model:ir.action,name:act_create_payments"
-msgid "Create Payments"
-msgstr "Crear Pagos"
-
-msgctxt "model:ir.action.wizard,name:act_create_payments"
-msgid "Create Payments"
-msgstr "Crear Pagos"
-
 msgctxt "selection:account.payment.create.start,kind:"
 msgid "Payable"
 msgstr "A pagar"
