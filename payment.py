@@ -4,10 +4,10 @@ from trytond.model import fields
 from trytond.pool import Pool, PoolMeta
 
 __all__ = ['PayLine', 'PayLineStart']
-__metaclass__ = PoolMeta
 
 
 class PayLineStart:
+    __metaclass__ = PoolMeta
     __name__ = 'account.move.line.pay.start'
 
     approve = fields.Boolean('Approve payments',
@@ -15,6 +15,7 @@ class PayLineStart:
 
 
 class PayLine:
+    __metaclass__ = PoolMeta
     __name__ = 'account.move.line.pay'
 
     def do_pay(self, action):
