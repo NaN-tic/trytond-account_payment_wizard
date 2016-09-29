@@ -3,12 +3,12 @@
 from trytond.model import fields
 from trytond.pool import Pool, PoolMeta
 
-__all__ = ['PayLine', 'PayLineStart']
+__all__ = ['PayLine', 'PayLineAskJournal']
 
 
-class PayLineStart:
+class PayLineAskJournal:
     __metaclass__ = PoolMeta
-    __name__ = 'account.move.line.pay.start'
+    __name__ = 'account.move.line.pay.ask_journal'
 
     approve = fields.Boolean('Approve payments',
         help='Create payments in approved state')
@@ -22,7 +22,7 @@ class PayLine:
         pool = Pool()
         Payment = pool.get('account.payment')
         action, data = super(PayLine, self).do_pay(action)
-        if self.start.approve:
+        if self.ask_journal.approve:
             payments = Payment.browse(data['res_id'])
             Payment.approve(payments)
 

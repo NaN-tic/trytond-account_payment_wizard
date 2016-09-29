@@ -7,7 +7,7 @@ from .payment import *
 
 def register():
     Pool.register(
-        PayLineStart,
+        PayLineAskJournal,
         module='account_payment_wizard', type_='model')
     Pool.register(
         PayLine,
