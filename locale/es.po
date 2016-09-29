@@ -2,10 +2,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "field:account.move.line.pay.start,approve:"
+msgctxt "field:account.move.line.pay.ask_journal,approve:"
 msgid "Approve payments"
 msgstr "Aprobar pagos"
 
-msgctxt "help:account.move.line.pay.start,approve:"
+msgctxt "help:account.move.line.pay.ask_journal,approve:"
 msgid "Create payments in approved state"
 msgstr "Crear pagos en estado aprobado."
