@@ -22,7 +22,7 @@ class PayLine:
         pool = Pool()
         Payment = pool.get('account.payment')
         action, data = super(PayLine, self).do_pay(action)
-        if self.ask_journal.approve:
+        if getattr(self.ask_journal, 'approve', False):
             payments = Payment.browse(data['res_id'])
             Payment.approve(payments)
 
