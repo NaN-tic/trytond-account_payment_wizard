@@ -6,16 +6,14 @@ from trytond.pool import Pool, PoolMeta
 __all__ = ['PayLine', 'PayLineAskJournal']
 
 
-class PayLineAskJournal:
-    __metaclass__ = PoolMeta
+class PayLineAskJournal(metaclass=PoolMeta):
     __name__ = 'account.move.line.pay.ask_journal'
 
     approve = fields.Boolean('Approve payments',
         help='Create payments in approved state')
 
 
-class PayLine:
-    __metaclass__ = PoolMeta
+class PayLine(metaclass=PoolMeta):
     __name__ = 'account.move.line.pay'
 
     def do_pay(self, action):

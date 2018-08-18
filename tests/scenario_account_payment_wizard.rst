@@ -72,7 +72,7 @@ Create a payment not approved::
     >>> payment.party == supplier
     True
     >>> payment.state
-    u'draft'
+    'draft'
     >>> payment.delete()
 
 Create a payment approved::
@@ -83,4 +83,4 @@ Create a payment approved::
     >>> pay_line.execute('start')
     >>> payment, = Payment.find()
     >>> payment.state
-    u'approved'
+    'approved'
