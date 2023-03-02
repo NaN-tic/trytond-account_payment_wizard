@@ -86,4 +86,4 @@ Create a payment approved::
     >>> pay_line.execute('next_')
     >>> payment, = Payment.find()
     >>> payment.state
-    'approved'
+    'submitted'

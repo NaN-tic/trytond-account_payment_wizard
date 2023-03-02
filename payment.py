@@ -23,6 +23,5 @@ class PayLine(metaclass=PoolMeta):
         if getattr(self.ask_journal, 'approve', False):
             payments = Payment.browse(data['res_id'])
             Payment.submit(payments)
-            Payment.approve(payments)
 
         return action, data
