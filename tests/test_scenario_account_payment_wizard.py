@@ -41,8 +41,10 @@ class Test(unittest.TestCase):
         _ = create_chart(company)
         accounts = get_accounts(company)
         payable = accounts['payable']
+        expense = accounts['expense']
+
         Journal = Model.get('account.journal')
-        expense, = Journal.find([('code', '=', 'EXP')])
+        journal_expense, = Journal.find([('code', '=', 'EXP')])
 
         # Create payment journal
         PaymentJournal = Model.get('account.payment.journal')
@@ -59,7 +61,7 @@ class Test(unittest.TestCase):
         # Create payable move
         Move = Model.get('account.move')
         move = Move()
-        move.journal = expense
+        move.journal = journal_expense
         line = move.lines.new(account=payable,
                               party=supplier,
                               credit=Decimal('50.00'),
